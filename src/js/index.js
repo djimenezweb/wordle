@@ -1,5 +1,17 @@
-// El styles lo importamos aquí, ya se carga después al compilar todo
 import '../scss/styles.scss';
-import { sayHello } from './demo.js';
+import { createRow } from './gameboard.js';
+import { randomWord } from './secretword';
+import { submitWord } from './submitword.js';
 
-sayHello();
+const wordleForm = document.getElementById('wordleForm');
+const gameBoard = document.getElementById('gameBoard');
+
+createRow();
+
+const secretWord = randomWord();
+console.log(secretWord);
+
+wordleForm.addEventListener('submit', e => {
+  e.preventDefault();
+  submitWord(e.target.wordInput.value, secretWord);
+});

@@ -1,7 +1,9 @@
 html {
 }
 body {
-  background-image: url(../assets/images/anubis.jpg);
-  background-size: contain;
-  filter: invert(1);
+  //background-image: url(../assets/images/anubis.jpg);
+  background-image: radial-gradient(at 50% 0px, rgb(31, 55, 86), rgb(20, 21, 57));
+  color: white;
+  min-height: 100vh;
+  font-family: sans-serif;
 }

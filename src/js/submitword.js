@@ -5,7 +5,7 @@ const submitWord = (word, secretWord) => {
     gameBoard.children[currentRow].children[index].textContent = word.charAt(index);
     if (word.charAt(index) === secretWord.charAt(index)) {
       gameBoard.children[currentRow].children[index].classList.add('game-board__box--correct');
-    } else if (secretWord.includes(word.charAt(index))) {
+    } else if (secretWord.includes(word.charAt(index)) && word.charAt(index) !== secretWord.charAt(index)) {
       gameBoard.children[currentRow].children[index].classList.add('game-board__box--included');
     } else {
       gameBoard.children[currentRow].children[index].classList.add('game-board__box--not-included');

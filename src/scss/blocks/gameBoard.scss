@@ -14,14 +14,14 @@ margin-bottom: 2rem;
     align-items: center;
 }
 
-.game-board__box--correct {
-    background-color: green;
+.game-board__box--not-included {
+    background-color: gray;
 }
 
 .game-board__box--included {
     background-color: orange;
 }
 
-.game-board__box--not-included {
-    background-color: gray;
+.game-board__box--correct {
+    background-color: green;
 }
